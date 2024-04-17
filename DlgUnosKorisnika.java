@@ -30,6 +30,7 @@ public class DlgUnosKorisnika extends JDialog {
 	private JTextField textFieldAdresaStanovanja;
 	private JTextField textFieldNadimakKorisnika;
 	private JPasswordField passwordFieldLozinkaKorisnika;
+	private JComboBox comboBoxMjestoStanovanja; 
 
 	/**
 	 * Launch the application.
@@ -47,6 +48,7 @@ public class DlgUnosKorisnika extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
+	@SuppressWarnings("rawtypes")
 	public DlgUnosKorisnika() {
 		setTitle("Unos korisnika");
 		setBounds(100, 100, 484, 561);
@@ -110,7 +112,6 @@ public class DlgUnosKorisnika extends JDialog {
 		}
 		{
 			JComboBox comboBoxMjestoStanovanja = new JComboBox();
-			comboBoxMjestoStanovanja.setEditable(true);
 			comboBoxMjestoStanovanja.setModel(new DefaultComboBoxModel(new String[] {"Odaberi mjesto stanovanja...", "Rijeka", "Kastav", "Zagreb", "Samobor", "Osijek", "Opatija", "Slavonski Brod", "Split", "Dubrovnik", "Novi Vinodolski", "Delnice", "Vinkovci", "Vukovar", "Pula", "Rovinj", "Zadar", "Šibenik"}));
 			comboBoxMjestoStanovanja.setFont(new Font("Times New Roman", Font.PLAIN, 14));
 			comboBoxMjestoStanovanja.setBounds(175, 264, 248, 26);
