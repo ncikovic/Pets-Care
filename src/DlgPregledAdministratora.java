@@ -21,6 +21,7 @@ public class DlgPregledAdministratora extends JDialog {
 
 	private static final long serialVersionUID = 1L;
 	JTextArea textAreaAdmin; 
+	private final JButton btnNewButtonPromjena = new JButton("PROMJENA");
 
 	/**
 	 * Launch the application.
@@ -63,6 +64,7 @@ public class DlgPregledAdministratora extends JDialog {
 		setTitle("PREGLED ADMINISTRATORA");
 		setBounds(100, 100, 528, 204);
 		getContentPane().setLayout(new BorderLayout());
+		getContentPane().add(btnNewButtonPromjena, BorderLayout.SOUTH);
 	
 		selectPregledAdmina();
 	}
